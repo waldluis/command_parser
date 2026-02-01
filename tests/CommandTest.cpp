@@ -30,3 +30,11 @@ TEST(CommandTest, DifferentCommandsAreNotEqual)
 
     EXPECT_NE(a, b);
 }
+
+TEST(CommandTest, StringToEnum) 
+{
+    EXPECT_EQ(command_type_from_string("SET"), CommandType::SET);
+    EXPECT_EQ(command_type_from_string("GET"), CommandType::GET);
+    EXPECT_EQ(command_type_from_string("RESET"), CommandType::RESET);
+    EXPECT_EQ(command_type_from_string("foo"), CommandType::INVALID);
+}

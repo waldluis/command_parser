@@ -13,6 +13,7 @@ FetchContent_MakeAvailable(googletest)
 add_executable(command_parser_tests
     CommandTest.cpp
     CommandResultTest.cpp
+    CommandParserTest.cpp
 )
 
 target_link_libraries(command_parser_tests
