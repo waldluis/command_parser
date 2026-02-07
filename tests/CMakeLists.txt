@@ -14,6 +14,12 @@ add_executable(command_parser_tests
     CommandTest.cpp
     CommandResultTest.cpp
     CommandParserTest.cpp
+    CommandDispatcherTest.cpp
+)
+
+target_include_directories(command_parser_tests
+    PRIVATE    
+        ${PROJECT_SOURCE_DIR}/tests
 )
 
 target_link_libraries(command_parser_tests

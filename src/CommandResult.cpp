@@ -1,8 +1,13 @@
 #include "CommandResult.h"
 
-CommandResult::CommandResult(bool success, std::string message) 
-    : success_(success), message_(std::move(message))
-{
+// CommandResult::CommandResult(bool success, std::string message) 
+//     : success_(success), message_(std::move(message))
+// {
+// }
+
+CommandResult::CommandResult(bool success, std::string message) {
+    success_ = success;
+    message_ = message;
 }
 
 CommandResult CommandResult::success(const std::string &message)
