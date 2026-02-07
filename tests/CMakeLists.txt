@@ -15,6 +15,7 @@ add_executable(command_parser_tests
     CommandResultTest.cpp
     CommandParserTest.cpp
     CommandDispatcherTest.cpp
+    SystemStateTest.cpp
 )
 
 target_include_directories(command_parser_tests
